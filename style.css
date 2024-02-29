@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(95,0,115);
+    background: radial-gradient(circle, rgba(95,0,115,1) 24%, rgba(105,12,170,1) 100%);
+}
+img{
+    border: solid 8px rgb(122, 122, 122);
+}
+
+.Titulo{
+    color: rgb(255, 255, 255);
+    font-size: 10vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    top: 170px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    border-bottom: solid 1px black;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.container{
+    margin-left:20% ;
+    margin-right: 20%;
+    background-color: rgb(57, 0, 90);
+    height: 400px;
+    width: 60%;
+    border-radius: 20px;
+    margin-top: 10%;
+    box-shadow: 5px 5px;
+}
+
+#link_github{
+    position: relative;
+    top: 38%;
+    display:flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 1vh;
+    font-family: "Roboto", sans-serif;
+    color: rgb(60, 255, 102);
+    text-decoration: none;
+    transition:all 0.3s;
+    border: solid ;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#link_github:hover{
+    background-color: rgb(202, 255, 159);
+    color: rgb(0, 0, 0);
+    transition: all 0.3s;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 2px;
+}
+
+.imagem_redonda{
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    width: 30vh;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+.imagem_redonda{
+    position: absolute; 
+    top: 20%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+}
+
+#horario{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+@media (max-width: 390px){
+    .imagem_redonda{
+        width: 20vh;
+        height: 20vh;
+        top: 25vh;
+    }
+
+    .Titulo{
+        font-size: 6vh;
+        top: 30%;
+    }
+
+    #link_github{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 25%;
+    }
+
+    .container{
+        margin-top: 50%;
+        height: 450px;
+        width: 80%;
+        margin-left:10%;
+    }
+}
+
+@media (max-width: 566px){
+    .imagem_redonda{
+        width: 20vh;
+        height: 20vh;
+        top: 25vh;
+    }
+
+    .Titulo{
+        font-size: 6vh;
+        top: 30%;
+    }
+
+    #link_github{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 25%;
+    }
+
+    .container{
+        margin-top: 50%;
+        height: 450px;
+        width: 80%;
+        margin-left:10%;
+    }
+
+    @media (max-width: 770px){
+        .imagem_redonda{
+            width: 30vh;
+            height: 30vh;
+            top: 20vh;
+        }
+    
+        .Titulo{
+            margin-left: 5vh;
+            margin-right: 5vh;
+        }
+    
+        #link_github{
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 25%;
+        }
+    
+        .container{
+            margin-top: 50%;
+            height: 450px;
+            width: 80%;
+            margin-left:10%;
+        }
+    }
+
+
+
+}
